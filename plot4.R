@@ -150,7 +150,7 @@ BuildPlot4PNG <- function() {
   graphics.off()
   
   ## Set up the file.
-  png("plot4.png")
+  png("plot4.png", width = 480, height = 480)
 
   ## Build Combined Graph
   par(mfrow=c(2,2))

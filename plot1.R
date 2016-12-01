@@ -117,7 +117,7 @@ BuildPlot1PNG <- function() {
   graphics.off()
   
   ## Set up the file.
-  png("plot1.png")
+  png("plot1.png", width = 480, height = 480)
   
   ## Build the plot.
   BuildHistogram(inFD = myFileData)

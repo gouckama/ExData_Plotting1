@@ -110,7 +110,7 @@ BuildPlot2PNG <- function() {
   graphics.off()
   
   ## Set up the file.
-  png("plot2.png")
+  png("plot2.png", width = 480, height = 480)
   
   ## Build the plot.
   BuildGlobalActivePower(inFD = myFileData)

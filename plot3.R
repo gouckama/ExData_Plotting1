@@ -126,7 +126,7 @@ BuildPlot3PNG <- function() {
   graphics.off()
   
   ## Set up the file.
-  png("plot3.png")
+  png("plot3.png", width = 480, height = 480)
   
   ## Build the plot.
   BuildSubMetering(inFD = myFileData)

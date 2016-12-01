@@ -1,4 +1,4 @@
-## This code builds the 2nd plot as required for the Week 1 Project
+## This code builds the 1st plot as required for the Week 1 Project
 ## of the Exploritory Data Analysis course.
 
 ## To build the plot

@@ -13,13 +13,13 @@
 ##
 ## FileData: this function reads the data for the plot.
 ##
-## BuildVoltage: this function builds plot2 displaying on the current
+## BuildVoltage: this function builds 1 of the 4 plots displaying on the current
 ##  graphics device.
 ##
-## BuildGlobalReactivePower: this function builds plot2 displaying on the current
+## BuildGlobalReactivePower: this function builds another of the 4 plots displaying on the current
 ##  graphics device.
 ##
-## BuildPlot4PNG: this functions builds the plot2.PNG file.
+## BuildPlot4PNG: this functions builds the plot4.PNG file.
 ##
 ## Note: other functions are used but are referenced in other source files used to
 ## build plot 2 and plot 3.  Hence, these source files must be available also.
@@ -86,8 +86,7 @@ FileData <- function()
 ##
 ## Parameters
 ## 
-## inReadData: defaults to TRUE and executes functionReadData to read in the data.
-##   Allowed values: TRUE, FALSE
+## inFD: a reference to the FileData variable.
 BuildVoltage <- function(inFD = NULL) {
 
   ## If a FileData reference is not created, make one.
@@ -104,8 +103,7 @@ BuildVoltage <- function(inFD = NULL) {
 ##
 ## Parameters
 ## 
-## inReadData: defaults to TRUE and executes functionReadData to read in the data.
-##   Allowed values: TRUE, FALSE
+## inFD: a reference to the FileData variable.
 BuildGlobalReactivePower <- function(inFD = NULL) {
   
   ## If a FileData reference is not created, make one.
@@ -123,11 +121,6 @@ BuildGlobalReactivePower <- function(inFD = NULL) {
 ## The PNG file is placed in the same directory where the data was read from.
 ## It is also assumed that that the code used to build plots 2 and 3 are 
 ## available.
-##
-## Parameters
-## 
-## inReadData: defaults to TRUE and executes functionReadData to read in the data.
-##   Allowed values: TRUE, FALSE
 BuildPlot4PNG <- function() {
   
   ## This is the directory where the PNG gets saved.
